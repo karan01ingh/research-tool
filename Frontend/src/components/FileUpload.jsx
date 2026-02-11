@@ -16,7 +16,7 @@ function FileUpload() {
       setLoading(true);
 
       const res = await axios.post(
-        "https://research-backend-zbam.onrender.com/api/upload",
+  "http://localhost:5000/api/upload",
         formData
       );
 
@@ -30,7 +30,13 @@ function FileUpload() {
   };
 
   return (
-    <div style={{ maxWidth: 600, margin: "40px auto", textAlign: "center" }}>
+    <div style={{ maxWidth: 600,
+    margin: "0 auto",
+    textAlign: "center",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)" }}>
       <h2>Research Tool – Earnings Summary</h2>
 
       <input
