@@ -16,7 +16,7 @@ function FileUpload() {
       setLoading(true);
 
       const res = await axios.post(
-  "http://localhost:5000/api/upload",
+  "https://research-tool-backend.onrender.com/api/upload",
         formData
       );
 
